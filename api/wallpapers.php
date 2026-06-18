@@ -1,18 +1,24 @@
 <?php
 /**
- * Wallpapers API
+ * Wallpapers API  (reads local JSON files — no GitHub)
  * Usage:  wallpapers.php?id=nature
  * Returns the wallpaper list JSON for the given category id:
  *   [ { "id": "...", "title": "...", "url": "..." }, ... ]
+ *
+ * Server layout expected (put these together):
+ *   wallpapers.php
+ *   categories.php
+ *   data/nature.json, data/cars.json, ...   <-- the per-category JSON files
  */
 
 header('Content-Type: application/json; charset=utf-8');
 header('Access-Control-Allow-Origin: *'); // allow your app to call this
 
-// Base location of the JSON data on GitHub (raw)
-$RAW_BASE = 'https://raw.githubusercontent.com/myhorsevideo1-boop/wallpaper-assets/main';
+// Folder (on THIS server) that holds the per-category JSON files.
+// Default: a "data" folder next to this PHP file. Change if you placed it elsewhere.
+$DATA_DIR = __DIR__ . '/data';
 
-// Allowed category ids (must match categories.json) — protects against bad input
+// Allowed category ids (must match your data/*.json files)
 $VALID = [
     'nature', 'mountains', 'space', 'abstract', 'city', 'ocean',
     'animals', 'cars', 'flowers', 'dark', 'art', 'sports',
@@ -26,41 +32,28 @@ if ($id === '') {
     echo json_encode(['error' => 'Missing required parameter: id']);
     exit;
 }
+// basename() strips any path tricks like ../  — extra safety
+$id = basename($id);
 if (!in_array($id, $VALID, true)) {
     http_response_code(404);
     echo json_encode(['error' => 'Unknown category id: ' . $id]);
     exit;
 }
 
-// 2) Fetch that category's wallpaper list
-$url  = $RAW_BASE . '/data/' . $id . '.json';
-$json = fetch_url($url);
+// 2) Build the local file path and read it
+$file = $DATA_DIR . '/' . $id . '.json';
+if (!is_file($file)) {
+    http_response_code(404);
+    echo json_encode(['error' => 'Data file not found for: ' . $id]);
+    exit;
+}
 
+$json = file_get_contents($file);
 if ($json === false) {
-    http_response_code(502);
-    echo json_encode(['error' => 'Could not load wallpapers for: ' . $id]);
+    http_response_code(500);
+    echo json_encode(['error' => 'Could not read data for: ' . $id]);
     exit;
 }
 
 // 3) Return it as-is (already in the required format)
 echo $json;
-
-
-/** Fetch a URL using cURL, falling back to file_get_contents. */
-function fetch_url($url)
-{
-    if (function_exists('curl_init')) {
-        $ch = curl_init($url);
-        curl_setopt_array($ch, [
-            CURLOPT_RETURNTRANSFER => true,
-            CURLOPT_FOLLOWLOCATION => true,
-            CURLOPT_TIMEOUT        => 15,
-            CURLOPT_USERAGENT      => 'WallpaperApp/1.0',
-        ]);
-        $data = curl_exec($ch);
-        $code = curl_getinfo($ch, CURLINFO_HTTP_CODE);
-        curl_close($ch);
-        return ($data !== false && $code === 200) ? $data : false;
-    }
-    return @file_get_contents($url);
-}
