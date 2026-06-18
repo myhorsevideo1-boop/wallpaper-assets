@@ -73,5 +73,155 @@
     "id": "minimal",
     "title": "Minimal",
     "image": "https://raw.githubusercontent.com/myhorsevideo1-boop/wallpaper-assets/main/images/minimal/01.jpg"
+  },
+  {
+    "id": "sunset",
+    "title": "Sunset",
+    "image": "https://raw.githubusercontent.com/myhorsevideo1-boop/wallpaper-assets/main/images/sunset/01.jpg"
+  },
+  {
+    "id": "forest",
+    "title": "Forest",
+    "image": "https://raw.githubusercontent.com/myhorsevideo1-boop/wallpaper-assets/main/images/forest/01.jpg"
+  },
+  {
+    "id": "waterfall",
+    "title": "Waterfall",
+    "image": "https://raw.githubusercontent.com/myhorsevideo1-boop/wallpaper-assets/main/images/waterfall/01.jpg"
+  },
+  {
+    "id": "winter",
+    "title": "Winter",
+    "image": "https://raw.githubusercontent.com/myhorsevideo1-boop/wallpaper-assets/main/images/winter/01.jpg"
+  },
+  {
+    "id": "autumn",
+    "title": "Autumn",
+    "image": "https://raw.githubusercontent.com/myhorsevideo1-boop/wallpaper-assets/main/images/autumn/01.jpg"
+  },
+  {
+    "id": "desert",
+    "title": "Desert",
+    "image": "https://raw.githubusercontent.com/myhorsevideo1-boop/wallpaper-assets/main/images/desert/01.jpg"
+  },
+  {
+    "id": "sky",
+    "title": "Sky",
+    "image": "https://raw.githubusercontent.com/myhorsevideo1-boop/wallpaper-assets/main/images/sky/01.jpg"
+  },
+  {
+    "id": "aurora",
+    "title": "Aurora",
+    "image": "https://raw.githubusercontent.com/myhorsevideo1-boop/wallpaper-assets/main/images/aurora/01.jpg"
+  },
+  {
+    "id": "beach",
+    "title": "Beach",
+    "image": "https://raw.githubusercontent.com/myhorsevideo1-boop/wallpaper-assets/main/images/beach/01.jpg"
+  },
+  {
+    "id": "rain",
+    "title": "Rain",
+    "image": "https://raw.githubusercontent.com/myhorsevideo1-boop/wallpaper-assets/main/images/rain/01.jpg"
+  },
+  {
+    "id": "lake",
+    "title": "Lake",
+    "image": "https://raw.githubusercontent.com/myhorsevideo1-boop/wallpaper-assets/main/images/lake/01.jpg"
+  },
+  {
+    "id": "island",
+    "title": "Island",
+    "image": "https://raw.githubusercontent.com/myhorsevideo1-boop/wallpaper-assets/main/images/island/01.jpg"
+  },
+  {
+    "id": "road",
+    "title": "Road",
+    "image": "https://raw.githubusercontent.com/myhorsevideo1-boop/wallpaper-assets/main/images/road/01.jpg"
+  },
+  {
+    "id": "bridge",
+    "title": "Bridge",
+    "image": "https://raw.githubusercontent.com/myhorsevideo1-boop/wallpaper-assets/main/images/bridge/01.jpg"
+  },
+  {
+    "id": "neon",
+    "title": "Neon",
+    "image": "https://raw.githubusercontent.com/myhorsevideo1-boop/wallpaper-assets/main/images/neon/01.jpg"
+  },
+  {
+    "id": "technology",
+    "title": "Technology",
+    "image": "https://raw.githubusercontent.com/myhorsevideo1-boop/wallpaper-assets/main/images/technology/01.jpg"
+  },
+  {
+    "id": "gaming",
+    "title": "Gaming",
+    "image": "https://raw.githubusercontent.com/myhorsevideo1-boop/wallpaper-assets/main/images/gaming/01.jpg"
+  },
+  {
+    "id": "music",
+    "title": "Music",
+    "image": "https://raw.githubusercontent.com/myhorsevideo1-boop/wallpaper-assets/main/images/music/01.jpg"
+  },
+  {
+    "id": "coffee",
+    "title": "Coffee",
+    "image": "https://raw.githubusercontent.com/myhorsevideo1-boop/wallpaper-assets/main/images/coffee/01.jpg"
+  },
+  {
+    "id": "books",
+    "title": "Books",
+    "image": "https://raw.githubusercontent.com/myhorsevideo1-boop/wallpaper-assets/main/images/books/01.jpg"
+  },
+  {
+    "id": "fire",
+    "title": "Fire",
+    "image": "https://raw.githubusercontent.com/myhorsevideo1-boop/wallpaper-assets/main/images/fire/01.jpg"
+  },
+  {
+    "id": "marble",
+    "title": "Marble",
+    "image": "https://raw.githubusercontent.com/myhorsevideo1-boop/wallpaper-assets/main/images/marble/01.jpg"
+  },
+  {
+    "id": "gold",
+    "title": "Gold",
+    "image": "https://raw.githubusercontent.com/myhorsevideo1-boop/wallpaper-assets/main/images/gold/01.jpg"
+  },
+  {
+    "id": "geometric",
+    "title": "Geometric",
+    "image": "https://raw.githubusercontent.com/myhorsevideo1-boop/wallpaper-assets/main/images/geometric/01.jpg"
+  },
+  {
+    "id": "birds",
+    "title": "Birds",
+    "image": "https://raw.githubusercontent.com/myhorsevideo1-boop/wallpaper-assets/main/images/birds/01.jpg"
+  },
+  {
+    "id": "cats",
+    "title": "Cats",
+    "image": "https://raw.githubusercontent.com/myhorsevideo1-boop/wallpaper-assets/main/images/cats/01.jpg"
+  },
+  {
+    "id": "dogs",
+    "title": "Dogs",
+    "image": "https://raw.githubusercontent.com/myhorsevideo1-boop/wallpaper-assets/main/images/dogs/01.jpg"
+  },
+  {
+    "id": "horses",
+    "title": "Horses",
+    "image": "https://raw.githubusercontent.com/myhorsevideo1-boop/wallpaper-assets/main/images/horses/01.jpg"
+  },
+  {
+    "id": "lion",
+    "title": "Lion",
+    "image": "https://raw.githubusercontent.com/myhorsevideo1-boop/wallpaper-assets/main/images/lion/01.jpg"
+  },
+  {
+    "id": "tiger",
+    "title": "Tiger",
+    "image": "https://raw.githubusercontent.com/myhorsevideo1-boop/wallpaper-assets/main/images/tiger/01.jpg"
   }
 ]

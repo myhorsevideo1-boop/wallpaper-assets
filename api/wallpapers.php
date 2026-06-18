@@ -18,13 +18,6 @@ header('Access-Control-Allow-Origin: *'); // allow your app to call this
 // Default: a "data" folder next to this PHP file. Change if you placed it elsewhere.
 $DATA_DIR = __DIR__ . '/data';
 
-// Allowed category ids (must match your data/*.json files)
-$VALID = [
-    'nature', 'mountains', 'space', 'abstract', 'city', 'ocean',
-    'animals', 'cars', 'flowers', 'dark', 'art', 'sports',
-    'food', 'architecture', 'minimal',
-];
-
 // 1) Read & validate the id param
 $id = isset($_GET['id']) ? trim($_GET['id']) : '';
 if ($id === '') {
@@ -32,11 +25,11 @@ if ($id === '') {
     echo json_encode(['error' => 'Missing required parameter: id']);
     exit;
 }
-// basename() strips any path tricks like ../  — extra safety
-$id = basename($id);
-if (!in_array($id, $VALID, true)) {
-    http_response_code(404);
-    echo json_encode(['error' => 'Unknown category id: ' . $id]);
+// Only allow safe characters (no path tricks like ../). Any new category that
+// follows this naming + has a data/<id>.json file will work automatically.
+if (!preg_match('/^[a-z0-9-]+$/', $id)) {
+    http_response_code(400);
+    echo json_encode(['error' => 'Invalid category id: ' . $id]);
     exit;
 }
 
