@@ -1,0 +1,77 @@
+[
+  {
+    "id": "nature",
+    "title": "Nature",
+    "image": "https://raw.githubusercontent.com/myhorsevideo1-boop/wallpaper-assets/main/images/nature/01.jpg"
+  },
+  {
+    "id": "mountains",
+    "title": "Mountains",
+    "image": "https://raw.githubusercontent.com/myhorsevideo1-boop/wallpaper-assets/main/images/mountains/01.jpg"
+  },
+  {
+    "id": "space",
+    "title": "Space",
+    "image": "https://raw.githubusercontent.com/myhorsevideo1-boop/wallpaper-assets/main/images/space/01.jpg"
+  },
+  {
+    "id": "abstract",
+    "title": "Abstract",
+    "image": "https://raw.githubusercontent.com/myhorsevideo1-boop/wallpaper-assets/main/images/abstract/01.jpg"
+  },
+  {
+    "id": "city",
+    "title": "City",
+    "image": "https://raw.githubusercontent.com/myhorsevideo1-boop/wallpaper-assets/main/images/city/01.jpg"
+  },
+  {
+    "id": "ocean",
+    "title": "Ocean",
+    "image": "https://raw.githubusercontent.com/myhorsevideo1-boop/wallpaper-assets/main/images/ocean/01.jpg"
+  },
+  {
+    "id": "animals",
+    "title": "Animals",
+    "image": "https://raw.githubusercontent.com/myhorsevideo1-boop/wallpaper-assets/main/images/animals/01.jpg"
+  },
+  {
+    "id": "cars",
+    "title": "Cars",
+    "image": "https://raw.githubusercontent.com/myhorsevideo1-boop/wallpaper-assets/main/images/cars/01.jpg"
+  },
+  {
+    "id": "flowers",
+    "title": "Flowers",
+    "image": "https://raw.githubusercontent.com/myhorsevideo1-boop/wallpaper-assets/main/images/flowers/01.jpg"
+  },
+  {
+    "id": "dark",
+    "title": "Dark / AMOLED",
+    "image": "https://raw.githubusercontent.com/myhorsevideo1-boop/wallpaper-assets/main/images/dark/01.jpg"
+  },
+  {
+    "id": "art",
+    "title": "Art",
+    "image": "https://raw.githubusercontent.com/myhorsevideo1-boop/wallpaper-assets/main/images/art/01.jpg"
+  },
+  {
+    "id": "sports",
+    "title": "Sports",
+    "image": "https://raw.githubusercontent.com/myhorsevideo1-boop/wallpaper-assets/main/images/sports/01.jpg"
+  },
+  {
+    "id": "food",
+    "title": "Food",
+    "image": "https://raw.githubusercontent.com/myhorsevideo1-boop/wallpaper-assets/main/images/food/01.jpg"
+  },
+  {
+    "id": "architecture",
+    "title": "Architecture",
+    "image": "https://raw.githubusercontent.com/myhorsevideo1-boop/wallpaper-assets/main/images/architecture/01.jpg"
+  },
+  {
+    "id": "minimal",
+    "title": "Minimal",
+    "image": "https://raw.githubusercontent.com/myhorsevideo1-boop/wallpaper-assets/main/images/minimal/01.jpg"
+  }
+]
